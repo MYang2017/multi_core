@@ -1,5 +1,9 @@
 # multi_core
-template for parallel scripting
+# template for parallel scripting
+# another example with buffered array in memory:
+# https://research.wmz.ninja/articles/2018/03/on-sharing-large-arrays-when-using-pythons-multiprocessing.html
+
+# ------------------------------------------------ code begins ---------------
 
 from functools import partial
 import time
