@@ -1,26 +1,9 @@
 import numpy as np
 import multiprocessing as mp
 from functools import partial
-from HSD.spatial_modem2 import checkerboard, estimate_translation, import_image
-from optsimpy.spatial_modem import interp_grid, interp2D
-from HSD.image.measure import symbol_clock
-from optsimpy.utils.import_config import import_config_using_arguments
 import time
 from socket import gethostname
-from HSD.session import setup
-import json
-from HSD.Camera_calibration.camera import load_transform
-import HSD.image.filter as filt
-import HSD.image.operations as image
-from HSD.modulate import create_xygrid, creategrid
-
-import HSD.expt as expt
-import HSD.image.operations as imageops
 import matplotlib.pyplot as plt
-from scipy import optimize
-from skimage.filters.rank import median as rank
-from skimage.morphology import disk
-import imageio
 from multiprocessing import Pool, RawArray
 
 
