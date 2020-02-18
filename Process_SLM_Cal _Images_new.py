@@ -2,10 +2,13 @@ import numpy as np
 import multiprocessing as mp
 from functools import partial
 import time
-from socket import gethostname
 import matplotlib.pyplot as plt
 from multiprocessing import Pool, RawArray
 
+
+# multiprocessing template to accelerate for loop operation
+# X is the common big data to share for sub-processes
+# Y is the output array used by sub-processes
 
 # A global dictionary storing the variables passed from the initializer function.
 var_dict = {}
